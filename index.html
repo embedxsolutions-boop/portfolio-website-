@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmbedX Solutions — Project Portfolio</title>
+  <meta name="description" content="Explore EmbedX Solutions' project portfolio — IoT, embedded systems, robotics, and automation solutions. Trusted by Tata Power and leading industries." />
+  <meta name="keywords" content="IoT, embedded systems, robotics, automation, smart energy, water management, SCADA, EmbedX Solutions" />
+  <meta property="og:title" content="EmbedX Solutions — Project Portfolio" />
+  <meta property="og:description" content="Innovative IoT, embedded systems, and automation solutions for industry leaders." />
+  <meta property="og:url" content="https://www.embedxsolutions.in/portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── Navigation ─────────────────────────────────────── -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <a href="https://www.embedxsolutions.in" class="nav-logo" id="nav-logo">
+        <img src="assets/logo.png" alt="EmbedX Solutions Logo" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#stats" class="nav-link" id="nav-stats">Impact</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+      <a href="https://www.embedxsolutions.in#contact" class="btn-nav" id="btn-quote">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#hero" id="mob-home">Home</a></li>
+      <li><a href="#projects" id="mob-projects">Projects</a></li>
+      <li><a href="#stats" id="mob-stats">Impact</a></li>
+      <li><a href="#contact" id="mob-contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ─── Hero ───────────────────────────────────────────── -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="hero-dots"></div>
+      <div class="hero-circle hc-1"></div>
+      <div class="hero-circle hc-2"></div>
+    </div>
+    <div class="hero-content">
+      <img src="assets/logo.png" alt="EmbedX Solutions" class="hero-logo" id="hero-logo" />
+      <div class="hero-badge" id="hero-badge">
+        <span class="badge-dot"></span>
+        Project Portfolio
+      </div>
+      <h1 class="hero-title" id="hero-title">
+        Engineering the<br />
+        <span class="gradient-text">Future of Industry</span>
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        Real-world IoT, embedded systems, robotics &amp; automation solutions
+        delivered by <strong>EmbedX Solutions</strong>. Trusted by Tata Power
+        and leading enterprises across sectors.
+      </p>
+      <div class="hero-cta" id="hero-cta">
+        <a href="#projects" class="btn-primary" id="btn-explore">
+          <span>Explore Projects</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://www.embedxsolutions.in" class="btn-ghost" id="btn-website" target="_blank" rel="noopener">
+          Visit Website
+        </a>
+      </div>
+      <div class="hero-metrics" id="hero-metrics">
+        <div class="metric">
+          <span class="metric-num" data-count="7">0</span><span class="metric-unit">+</span>
+          <span class="metric-label">Products Built</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <span class="metric-num" data-count="100">0</span><span class="metric-unit">%</span>
+          <span class="metric-label">IoT Enabled</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <span class="metric-num" data-count="1000">0</span><span class="metric-unit">km+</span>
+          <span class="metric-label">Remote Control Range</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll" id="hero-scroll">
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ─── Projects Filter Bar ─────────────────────────────── -->
+  <section id="projects" class="projects-section">
+    <div class="section-header">
+      <div class="section-tag">Our Work</div>
+      <h2 class="section-title">Our <span class="gradient-text">Projects</span></h2>
+      <p class="section-subtitle">
+        Each project is a testament to precision engineering, cutting-edge technology, and real-world impact.
+      </p>
+    </div>
+
+    <div class="filter-bar" id="filter-bar">
+      <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+      <button class="filter-btn" data-filter="iot" id="filter-iot">IoT & Embedded</button>
+      <button class="filter-btn" data-filter="robotics" id="filter-robotics">Robotics</button>
+      <button class="filter-btn" data-filter="energy" id="filter-energy">Energy</button>
+      <button class="filter-btn" data-filter="3d" id="filter-3d">3D Printing</button>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <!-- ── 1. AKVARATAN ─────────────────────── -->
+      <article class="project-card featured" data-category="iot" id="card-akvaratan">
+        <div class="card-media">
+          <div class="card-images">
+            <img src="assets/akvaratan/akvaratan-device.jpg" alt="AKVARATAN intelligent water management device" class="card-img primary" loading="lazy" />
+            <img src="assets/akvaratan/akvaratan-app.jpg" alt="AKVARATAN mobile app showing water level and pump control" class="card-img secondary" loading="lazy" />
+          </div>
+          <div class="card-overlay">
+            <button class="btn-lightbox" data-project="akvaratan" id="lightbox-akvaratan" aria-label="View AKVARATAN project">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+          <div class="card-client-badge">
+            <span>Client: Tata Power</span>
+          </div>
+          <div class="card-status">
+            <span class="status-dot"></span>
+            Deployed
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-iot">IoT</span>
+            <span class="tag tag-industrial">Industrial</span>
+            <span class="tag tag-mobile">Mobile App</span>
+          </div>
+          <h3 class="card-title">AKVARATAN</h3>
+          <p class="card-tagline">Intelligent Water Management System</p>
+          <p class="card-desc">
+            AKVARATAN is an advanced water monitoring system purpose-built for industrial and utility applications. Deployed for Tata Power, it provides real-time tank level measurement via ultrasonic sensing, remote pump control through a dedicated mobile app, and operates autonomously over SIM/GSM networks — eliminating WiFi dependency for remote site reliability.
+          </p>
+          <ul class="card-features">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Dry-run protection to safeguard pump motor
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              SIM/GSM based — works without WiFi infrastructure
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Auto &amp; Manual pump control modes
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Real-time level % display on mobile
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              On-board LCD for local status display
+            </li>
+          </ul>
+          <div class="card-tech">
+            <span class="tech-chip">GSM/SIM</span>
+            <span class="tech-chip">Ultrasonic Sensor</span>
+            <span class="tech-chip">Custom App</span>
+            <span class="tech-chip">Embedded C</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── 2. PMC ROBOT ─────────────────────── -->
+      <article class="project-card" data-category="robotics" id="card-pmc">
+        <div class="card-media">
+          <div class="card-images">
+            <img src="assets/pmc-robot/pmc-robot.jpg" alt="PMC Robot for breaker status authentication" class="card-img primary" loading="lazy" />
+          </div>
+          <div class="card-overlay">
+            <button class="btn-lightbox" data-project="pmc" id="lightbox-pmc" aria-label="View PMC Robot project">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+          <div class="card-status">
+            <span class="status-dot"></span>
+            Active
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-robotics">Robotics</span>
+            <span class="tag tag-iot">IoT</span>
+            <span class="tag tag-safety">Safety Critical</span>
+          </div>
+          <h3 class="card-title">PMC Robot</h3>
+          <p class="card-tagline">Breaker Status 2-Factor Authentication Robot</p>
+          <p class="card-desc">
+            Engineered to prevent industrial accidents caused by SCADA misinterpretation, the PMC Robot physically visits and verifies breaker status with onboard cameras and sensors. Control room engineers can now remotely monitor actual breaker states in real-time from anywhere in the world, creating a critical safety layer between human decision-making and high-voltage equipment.
+          </p>
+          <ul class="card-features">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Physical 2FA for breaker status verification
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Prevents accidents from SCADA misinterpretation
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              IoT enabled — globally controllable
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Real-time live feed to control room engineers
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Autonomous navigation to breaker panels
+            </li>
+          </ul>
+          <div class="card-tech">
+            <span class="tech-chip">IoT</span>
+            <span class="tech-chip">Computer Vision</span>
+            <span class="tech-chip">SCADA Integration</span>
+            <span class="tech-chip">Autonomous Nav</span>
+          </div>
+          <a href="https://www.linkedin.com/posts/shubham-nazre-a26249233_robotics-automation-iot-ugcPost-7377017401768476672-HY3f" target="_blank" rel="noopener" class="card-linkedin" id="linkedin-pmc">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            View on LinkedIn
+          </a>
+        </div>
+      </article>
+
+      <!-- ── 3. BVM ────────────────────────────── -->
+      <article class="project-card" data-category="iot" id="card-bvm">
+        <div class="card-media">
+          <div class="card-images">
+            <img src="assets/bvm/bvm-device.jpg" alt="BVM battery voltage monitoring device for forklift" class="card-img primary" loading="lazy" />
+            <img src="assets/bvm/bvm-app.jpg" alt="BVM mobile app showing SOC and cell voltages" class="card-img secondary" loading="lazy" />
+          </div>
+          <div class="card-overlay">
+            <button class="btn-lightbox" data-project="bvm" id="lightbox-bvm" aria-label="View BVM project">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+          <div class="card-status">
+            <span class="status-dot"></span>
+            Production
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-iot">IoT</span>
+            <span class="tag tag-energy">Energy</span>
+            <span class="tag tag-industrial">Industrial</span>
+          </div>
+          <h3 class="card-title">BVM System</h3>
+          <p class="card-tagline">Battery Voltage Monitoring for Forklifts</p>
+          <p class="card-desc">
+            The BVM (Battery Voltage Monitor) is a precision IoT system designed for forklift battery management in industrial facilities. It measures per-cell voltages and calculates accurate State of Charge (SOC) in real-time, enabling warehouse and logistics operators to optimize battery health, prevent unexpected shutdowns, and extend battery lifespan significantly.
+          </p>
+          <ul class="card-features">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Per-cell voltage monitoring (Cell 1–4+)
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Accurate SOC % calculation and display
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Fully programmable &amp; user-configurable thresholds
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Custom mobile app with live dashboard
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Prevents forklift downtime from battery failure
+            </li>
+          </ul>
+          <div class="card-tech">
+            <span class="tech-chip">IoT</span>
+            <span class="tech-chip">BMS</span>
+            <span class="tech-chip">Custom App</span>
+            <span class="tech-chip">ADC Sensing</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── 4. SMART ENERGY METER GATEWAY ─────── -->
+      <article class="project-card featured" data-category="energy" id="card-energy">
+        <div class="card-media">
+          <div class="card-images">
+            <img src="assets/smart-energy-meter/energy-meter.jpg" alt="Smart Energy Meter Gateway with touchscreen display" class="card-img primary" loading="lazy" />
+          </div>
+          <div class="card-overlay">
+            <button class="btn-lightbox" data-project="energy" id="lightbox-energy" aria-label="View Smart Energy Meter project">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+          <div class="card-status">
+            <span class="status-dot"></span>
+            Deployed
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-energy">Energy</span>
+            <span class="tag tag-security">Cybersecurity</span>
+            <span class="tag tag-industrial">SCADA</span>
+          </div>
+          <h3 class="card-title">Smart Energy Meter Gateway</h3>
+          <p class="card-tagline">Secure Industrial Energy Data Acquisition System</p>
+          <p class="card-desc">
+            Engineered specifically to address energy data security threats in SCADA environments, this gateway provides a completely isolated, cybersecure data acquisition pipeline. Operating over Modbus TCP protocol with fiber optic capability, it can transmit critical energy telemetry over 1,000+ kilometers, making it ideal for large-scale utility and industrial deployments.
+          </p>
+          <ul class="card-features">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Cybersecure isolated data acquisition pipeline
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Modbus TCP protocol for industrial compatibility
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Fiber optic transmission over 1,000+ km
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Multiple meter monitoring (SM1, SM2…) simultaneously
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Touchscreen TFT display with smart UI
+            </li>
+          </ul>
+          <div class="card-tech">
+            <span class="tech-chip">Modbus TCP</span>
+            <span class="tech-chip">Fiber Optic</span>
+            <span class="tech-chip">ESP-NOW</span>
+            <span class="tech-chip">SCADA Integration</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── 5. SMARTZLY ─────────────────────── -->
+      <article class="project-card" data-category="iot" id="card-smartzly">
+        <div class="card-media">
+          <div class="card-images">
+            <img src="assets/smartzly/smartzly-device.jpg" alt="Smartzly industrial IoT control module" class="card-img primary" loading="lazy" />
+            <img src="assets/smartzly/smartzly-device2.jpg" alt="Smartzly device showing glowing control buttons" class="card-img secondary" loading="lazy" />
+          </div>
+          <div class="card-overlay">
+            <button class="btn-lightbox" data-project="smartzly" id="lightbox-smartzly" aria-label="View Smartzly project">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+          <div class="card-status">
+            <span class="status-dot"></span>
+            Available
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-iot">IoT</span>
+            <span class="tag tag-industrial">Industrial</span>
+            <span class="tag tag-automation">Automation</span>
+          </div>
+          <h3 class="card-title">Smartzly</h3>
+          <p class="card-tagline">Global Industrial Appliance Control</p>
+          <p class="card-desc">
+            Smartzly brings industrial automation into the palm of your hand. Control heavy industrial appliances, machinery, and equipment from anywhere in the world via the SmartLife app ecosystem. Featuring hardened enclosures, illuminated touch controls, and integrated safety breakers, it bridges legacy industrial infrastructure with modern IoT connectivity.
+          </p>
+          <ul class="card-features">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Control from anywhere via SmartLife app
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Hardened IP-rated industrial enclosure
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Illuminated capacitive touch buttons
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Integrated safety MCB circuit breakers
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Multi-channel control (4+ independent channels)
+            </li>
+          </ul>
+          <div class="card-tech">
+            <span class="tech-chip">SmartLife</span>
+            <span class="tech-chip">Wi-Fi/Cloud</span>
+            <span class="tech-chip">Industrial MCB</span>
+            <span class="tech-chip">Touch UI</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── 6. 3D PRINTS ─────────────────────── -->
+      <article class="project-card" data-category="3d" id="card-3d">
+        <div class="card-media">
+          <div class="card-images">
+            <img src="assets/3d-prints/moon-lamp.jpg" alt="3D printed moon lamp with detailed surface texture" class="card-img primary" loading="lazy" />
+            <img src="assets/3d-prints/mushroom-lamp.jpg" alt="3D printed mushroom LED lamp in pink" class="card-img secondary" loading="lazy" />
+          </div>
+          <div class="card-overlay">
+            <button class="btn-lightbox" data-project="3d" id="lightbox-3d" aria-label="View 3D Prints project">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+          <div class="card-status status-blue">
+            <span class="status-dot"></span>
+            Available
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-3d">3D Printing</span>
+            <span class="tag tag-design">Product Design</span>
+          </div>
+          <h3 class="card-title">3D Printed Products</h3>
+          <p class="card-tagline">High-Precision Additive Manufacturing</p>
+          <p class="card-desc">
+            EmbedX Solutions operates professional-grade FDM 3D printing for prototypes, custom enclosures, decorative items, jigs, and low-volume production runs. From intricate moon lamps with realistic crater textures to illuminated decorative mushroom lamps, our printer delivers exceptional surface finish and accuracy for any application.
+          </p>
+          <ul class="card-features">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Professional-grade FDM printing
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Custom enclosures for electronic projects
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Rapid prototyping for hardware products
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Decorative &amp; artistic custom prints
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Low-volume production run capability
+            </li>
+          </ul>
+          <div class="card-tech">
+            <span class="tech-chip">FDM Printing</span>
+            <span class="tech-chip">CAD Design</span>
+            <span class="tech-chip">PLA/PETG</span>
+            <span class="tech-chip">Rapid Prototype</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── 7. KEKDA ROBOT (Bonus) ───────────── -->
+      <article class="project-card" data-category="robotics" id="card-kekda">
+        <div class="card-media">
+          <div class="card-images">
+            <img src="assets/kekda/kekda-robot.jpg" alt="Kekda hexapod spider robot with servo motors" class="card-img primary" loading="lazy" />
+          </div>
+          <div class="card-overlay">
+            <button class="btn-lightbox" data-project="kekda" id="lightbox-kekda" aria-label="View Kekda Robot project">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+          <div class="card-status status-purple">
+            <span class="status-dot"></span>
+            R&amp;D
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-robotics">Robotics</span>
+            <span class="tag tag-3d">3D Printed</span>
+            <span class="tag tag-automation">Mechatronics</span>
+          </div>
+          <h3 class="card-title">Kekda Hexapod</h3>
+          <p class="card-tagline">3D Printed Multi-Leg Servo Robot</p>
+          <p class="card-desc">
+            The Kekda Hexapod is a fully 3D-printed six-legged walking robot featuring 12+ servo motors for fluid biomimetic locomotion. Designed as a research and demonstration platform, it showcases EmbedX's integrated capability in mechanical design, 3D printing precision, embedded firmware, and real-time servo control algorithms.
+          </p>
+          <ul class="card-features">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Fully 3D-printed structural components
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              12 servo motors for biomimetic walking gait
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Real-time inverse kinematics control
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Wireless remote control interface
+            </li>
+          </ul>
+          <div class="card-tech">
+            <span class="tech-chip">Servo Control</span>
+            <span class="tech-chip">3D Printed</span>
+            <span class="tech-chip">IK Algorithm</span>
+            <span class="tech-chip">Wireless</span>
+          </div>
+          <div class="card-video-hint">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Demo video available — click to view
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ─── Stats / Impact Section ─────────────────────────── -->
+  <section id="stats" class="stats-section">
+    <div class="stats-bg-dec"></div>
+    <div class="stats-content">
+      <div class="section-tag">Real-World Impact</div>
+      <h2 class="section-title">Numbers That <span class="gradient-text">Matter</span></h2>
+      <div class="stats-grid" id="stats-grid">
+        <div class="stat-item" id="stat-1">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="stat-num" data-count="7">0</div>
+          <div class="stat-label">Products Deployed</div>
+        </div>
+        <div class="stat-item" id="stat-2">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <div class="stat-num">1000<span style="font-size:0.5em">+</span></div>
+          <div class="stat-label">km Remote Control Range</div>
+        </div>
+        <div class="stat-item" id="stat-3">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="stat-num" data-count="100">0</div>
+          <div class="stat-label">% Cybersecure Architecture</div>
+        </div>
+        <div class="stat-item" id="stat-4">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Remote Monitoring Uptime</div>
+        </div>
+        <div class="stat-item" id="stat-5">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div class="stat-num">Tata<span style="font-size:0.45em; display:block">Power</span></div>
+          <div class="stat-label">Enterprise Client Served</div>
+        </div>
+        <div class="stat-item" id="stat-6">
+          <div class="stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="stat-num">0<span style="font-size:0.5em">%</span></div>
+          <div class="stat-label">Accidents Since Deployment</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact Section ────────────────────────────────── -->
+  <section id="contact" class="contact-section">
+    <div class="section-header">
+      <div class="section-tag">Let's Work Together</div>
+      <h2 class="section-title">Start Your <span class="gradient-text">Project</span></h2>
+      <p class="section-subtitle">
+        Have a complex engineering challenge? Our team is ready to turn your vision into a production-ready solution.
+      </p>
+    </div>
+    <div class="contact-cards" id="contact-cards">
+      <a href="tel:+918433828395" class="contact-card" id="contact-phone">
+        <div class="contact-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.11 11 19.79 19.79 0 011.07 2.4 2 2 0 013.06.22h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0121 14.72v2.2z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">(+91) 8433828395</span>
+        </div>
+        <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="mailto:contact@embedxsolutions.in" class="contact-card" id="contact-email">
+        <div class="contact-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">contact@embedxsolutions.in</span>
+        </div>
+        <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="https://www.instagram.com/embedx_solutions" target="_blank" rel="noopener" class="contact-card" id="contact-instagram">
+        <div class="contact-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Instagram</span>
+          <span class="contact-value">@EMBEDX_SOLUTIONS</span>
+        </div>
+        <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="https://www.embedxsolutions.in" target="_blank" rel="noopener" class="contact-card" id="contact-website">
+        <div class="contact-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <div class="contact-info">
+          <span class="contact-label">Website</span>
+          <span class="contact-value">embedxsolutions.in</span>
+        </div>
+        <svg class="contact-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="contact-cta" id="contact-cta">
+      <a href="https://www.embedxsolutions.in#contact" class="btn-primary btn-large" id="btn-get-quote" target="_blank" rel="noopener">
+        <span>Get a Free Quote</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─────────────────────────────────────────── -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="EmbedX Solutions" class="footer-logo-img" />
+        <p class="footer-tagline">The New Era of Innovation</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.embedxsolutions.in" target="_blank" rel="noopener">Main Website</a>
+        <a href="mailto:contact@embedxsolutions.in">Email Us</a>
+        <a href="tel:+918433828395">Call Us</a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 EmbedX Solutions. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── Lightbox Modal ─────────────────────────────────── -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project media viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lightbox-nav prev" id="lightbox-prev" aria-label="Previous">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="lightbox-nav next" id="lightbox-next" aria-label="Next">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+    <div class="lightbox-content" id="lightbox-content">
+      <div class="lightbox-media" id="lightbox-media"></div>
+      <div class="lightbox-info" id="lightbox-info">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-desc"></p>
+        <div class="lightbox-dots" id="lightbox-dots"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
